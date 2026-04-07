@@ -17,15 +17,21 @@
 \contentsline {subsection}{\numberline {1.3.1}Permutations and Combinations}{1}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Stars and Bars}{1}{subsection.1.3.2}%
 \contentsline {chapter}{\numberline {2}Random Variables}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Common Probability Distributions}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Probability Distributions}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Expectation and Variance}{3}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Transformations of Random Variables}{3}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Limit Theorems}{3}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Law of Large Numbers}{3}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Central Limit Theorem}{3}{subsection.2.4.2}%
 \contentsline {chapter}{\numberline {3}Advanced Expectation}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Markov Chains}{5}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Runs and Sequences}{5}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Random Walks}{5}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Game Theory and Nim}{5}{section.3.4}%
+\contentsline {section}{\numberline {3.1}Linearity of Expectation}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Indicator Variables}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Coupon Collector Problem}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Markov Chains}{5}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Runs and Sequences}{5}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Random Walks}{5}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Gambler's Ruin}{5}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Game Theory and Nim}{5}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Advanced Counting Techniques}{7}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Derangements}{7}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Vandermonde's Identity}{7}{section.4.2}%

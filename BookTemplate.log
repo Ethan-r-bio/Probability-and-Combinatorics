@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  6 APR 2026 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.11.27)  6 APR 2026 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1650,7 +1650,7 @@ Package hyperref Info: Link coloring ON on input line 8.
 \@outlinefile=\write8
 \openout8 = `BookTemplate.out'.
 
-<Images/Prob2.png, id=149, 2890.8pt x 2357.05594pt>
+<Images/Prob2.png, id=173, 2890.8pt x 2357.05594pt>
 File: Images/Prob2.png Graphic file (type png)
 <use Images/Prob2.png>
 Package pdftex.def Info: Images/Prob2.png  used on input line 14.
@@ -1708,10 +1708,10 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 
-] [4] (./AuxiliaryFiles/Mainmatter.tex [5
+] [4
 
 
-] [6
+] (./AuxiliaryFiles/Mainmatter.tex [5] [6
 
 
 ])
@@ -1720,7 +1720,7 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \chapter
+l.86 \chapter
              {Random Variables} [1
 
 
@@ -1728,7 +1728,7 @@ l.80 \chapter
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \chapter
+l.86 \chapter
              {Random Variables} [2
 
 
@@ -1796,21 +1796,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-14>
  ***********
 Package rerunfilecheck Info: File `BookTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 5B0F9A4E6A366087817A7EF52CCC1BE8;4882.
+(rerunfilecheck)             Checksum: BDDDE58EFE72D6B14E6D3C09A1513D6B;5838.
  ) 
 Here is how much of TeX's memory you used:
- 56865 strings out of 467538
- 1306375 string characters out of 5423724
- 2223373 words of memory out of 5000000
- 84467 multiletter control sequences out of 15000+600000
+ 56875 strings out of 467538
+ 1306524 string characters out of 5423724
+ 2224373 words of memory out of 5000000
+ 84471 multiletter control sequences out of 15000+600000
  721084 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  146i,11n,161p,1031b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on BookTemplate.pdf (20 pages, 2344544 bytes).
+Output written on BookTemplate.pdf (20 pages, 2340604 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 52 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 346 compressed objects within 4 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 404 words of extra memory for PDF output out of 10000 (max. 10000000)
 
