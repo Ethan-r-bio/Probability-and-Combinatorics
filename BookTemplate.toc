@@ -1,0 +1,43 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\ttl@change@i {\@ne }{part}{4pc}{\addvspace {8pt}}{}{\Large \bfseries }{\tiny \color {black!50}\;\;\dotfill \;\large \bfseries \color {black}\PageName \, \thecontentspage }\relax 
+\ttl@change@v {part}{}{}{}\relax 
+\ttl@change@i {\@ne }{chapter}{4pc}{\addvspace {16pt}\Large \bfseries \thecontentslabel }{\hspace {.5cm}}{}{\tiny \color {black!50}\;\;\dotfill \;\large \bfseries \color {black}\PageName \, \thecontentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\ttl@change@i {\@ne }{section}{5pc}{\addvspace {2pt}\bfseries \thecontentslabel \normalfont }{\hspace {.5cm}}{}{\tiny \color {black!50}\;\;\dotfill \;\normalsize \color {black}\PageName \, \thecontentspage }\relax 
+\ttl@change@v {section}{}{}{}\relax 
+\ttl@change@i {\@ne }{subsection}{6pc}{\addvspace {2pt}\bfseries \thecontentslabel \normalfont }{\hspace {.5cm}}{}{\tiny \color {black!50}\;\;\dotfill \;\normalsize \color {black}\PageName \, \thecontentspage }\relax 
+\ttl@change@v {subsection}{}{}{}\relax 
+\contentsline {part}{Introduction}{III}{chapter*.3}%
+\contentsline {part}{Errata Corrige}{V}{chapter*.4}%
+\contentsline {chapter}{\numberline {1}Foundations of Probability Theory}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Probability Axioms and Conceptual Foundations}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Conditional Probability, Inclusion-Exclusion, and Independence}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Combinatorics and Counting Principles}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Permutations and Combinations}{1}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Stars and Bars}{1}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {2}Random Variables}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Common Probability Distributions}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Expectation and Variance}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Transformations of Random Variables}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Limit Theorems}{3}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Advanced Expectation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Markov Chains}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Runs and Sequences}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Random Walks}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Game Theory and Nim}{5}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Advanced Counting Techniques}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Derangements}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Vandermonde's Identity}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Burnside's Lemma}{7}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Distinguisability}{7}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Catalan Numbers}{7}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Generating Functions}{7}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Pigeonhole Principle}{7}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Partitions}{7}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Recurrence Relations}{7}{section.4.9}%
+ \vspace {25pt} \noindent \hskip 2em\relax \hskip 2em\relax \bfseries {\Large Appendices} \par \vspace {10pt}
+\ttl@change@i {\@ne }{chapter}{4pc}{\addvspace {16pt}\Large \bfseries \thecontentslabel }{\hspace {.5cm}}{}{\tiny \color {black!50}\;\;\dotfill \;\large \bfseries \color {black}\PageName \, \thecontentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\contentsline {chapter}{\numberline {A}Title}{11}{appendix.1.A}%
+\contentsfinish 
