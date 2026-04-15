@@ -89,6 +89,18 @@
 
 \subsection{Stars and Bars}
 
+\begin{propc}[Weakly Descending]
+    How many 4-digit numbers have their digits in weakly descending order? In these numbers, every digit beginning with the hundreds digit is less than or equal to the digit before it.\\\\
+    SOLUTION:\\\\
+    Consider the following scenario. We have, in a row, 9 boxes with labels in descending order from 9 to 1. We also have 4 identical balls. It is key to realize that the number of combinations of placing the balls in the boxes is synonymous with the original question. If each ball is a digit and corresponds to the digit of the box it is in, then that combination is a unit ordering. For example, \[d_1||||d_2d_3||d_4|||\] corresponds to 9553. The only arrangement that yields an invalid solution is $|||||||||d_1d_2d_3d_4$, which corresponds to 0000. Thus, the number of valid combinations is yielded by stars and bars: \[\binom{9+4-1}{4}-1=\frac{13(12)(11)(10)}{(4)(3)(2)}-1=\boxed{714}\]
+    
+\end{propc}
+
+\subsection{Symmetry and Overcounting}
+
+\begin{propc}
+    Six people sit around in a circular table. Romeo and Juliet wish to sit together. Julius does not wish to sit next to Brutus. Rosencrantz and Guildenstern do not care where they sit. In how many distinguishable ways can they be seated? Two seating arrangements are distinguishable if one cannot be rotated parallel to the floor to form the other. (2017 17)
+\end{propc}
 
 \chapter{Random Variables}
 
@@ -152,6 +164,15 @@ Thus,
 
 \section{Random Walks}
 
+\begin{propc}
+Karthik is on a vertex of a pentagon. Every minute, he randomly moves to an adjacent vertex. What is the expected number of minutes until he returns to his original vertex.\\\\
+SOLUTION 1 (Markov Chain): \\\\
+
+SOLUTION 2 (Utilising Random Walks): \\\\
+Again, due to symmetry, where we begin doesn't matter. However, the key insight is realizing that after the first step, we now have a random walk with bounds at $-1$ and $4$. The expected time for the run to terminate is $ab=(1)(4)=4$. Thus, the expected time is $1+4=5$.
+
+\end{propc}
+
 \subsection{Gambler's Ruin}
 
 \section{Advanced Probabalistic Thinking}
@@ -168,6 +189,16 @@ Three points are independently and randomly placed in a circle, and connected to
 
 
 \end{propc}
+
+\subsection{Reduced Spaces}
+
+\begin{propc}[2 Dice before 2 Dice]
+Roll a die until a 2 and a 3 are rolled at least once. What is the probability that exactly 2 6s appear? \\\\
+SOLUTION: \\\\
+\end{propc}
+
+
+
 
 \section{Game Theory and Nim}
 
