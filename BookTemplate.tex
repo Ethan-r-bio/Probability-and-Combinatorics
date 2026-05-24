@@ -8,9 +8,13 @@
 \usepackage{Styles/xeboiboites}
 \usepackage[dvipsnames]{xcolor}
 
-\newbreakabletheorem[small box style={draw=orange,fill=green!20},
-    big box style={fill=ForestGreen!20,draw=orange}, size=.95\textwidth]
+\newbreakabletheorem[small box style={draw=ForestGreen,fill=LimeGreen!10, rounded corners},
+    big box style={fill=ForestGreen!5,draw=ForestGreen}, size=.95\textwidth]
     {propc}{}{}
+
+\newbreakabletheorem[small box style={draw=NavyBlue,fill=NavyBlue!10, rounded corners},
+    big box style={fill=SkyBlue!10,draw=RoyalBlue, rounded corners}, size=.95\textwidth]
+    {propt}{}{}
 
 \begin{document}
 
@@ -33,7 +37,7 @@
 {\LArge\bfseries\ }              \\[2.5pt]
         {\Large\textsc{Ethan Rubio}                \\[6.5pt]
          \large\textsc{ethan.r.bio@icloud.com}}                       \\[40pt]
-\Large\Date
+\Large\Date{}
 \end{center}
 \end{titlepage}
 
@@ -46,7 +50,7 @@
 \chapter*{}\addcontentsline{toc}{part}{\IntroductionName}
 \vspace{-1.5cm}
     \begin{minipage}[r]{.95\textwidth}\raggedleft
-    \HUGE\bfseries\IntroductionName
+    \HUGE\bfseries\IntroductionName{}
     \end{minipage}
 \vspace{2.5cm}
 
@@ -59,7 +63,7 @@
 \chapter*{}\addcontentsline{toc}{part}{\ErrataName}
 \vspace{-1.5cm}
     \begin{minipage}[r]{.95\textwidth}\raggedleft
-    \HUGE\bfseries\ErrataName
+    \HUGE\bfseries\ErrataName{}
     \end{minipage}
 
 \vspace{2.5cm}
@@ -69,8 +73,11 @@
 
 \vspace{.5cm}
 \begin{longtable}{p{4cm}p{1.45cm}p{8cm}}
-	Date & Page&   \\\hline
-\Date	& -	& -\\
+	\toprule
+	Date & Page & \\
+	\midrule
+	\Date{} & --  & --\\
+	\bottomrule
 \end{longtable}
 
 
@@ -98,13 +105,21 @@
 
 \subsection{Symmetry and Overcounting}
 
-\begin{propc}
+\begin{propc}[Firm Circular Seating]
     Six people sit around in a circular table. Romeo and Juliet wish to sit together. Julius does not wish to sit next to Brutus. Rosencrantz and Guildenstern do not care where they sit. In how many distinguishable ways can they be seated? Two seating arrangements are distinguishable if one cannot be rotated parallel to the floor to form the other. (2017 17)
 \end{propc}
 
 \chapter{Random Variables}
 
-\section{Probability Distributions}
+\section{Common Probability Distributions}
+
+\subsection{Discrete Uniform}
+\subsection{Continuous Uniform}
+\subsection{Binomial Distribution}
+\subsection{Geometric Distribution}
+\subsection{Negative Binomial Distribution}
+\subsection{Hypergeometric Distribution}
+\subsection{Normal Distribution}
 
 \section{Expectation and Variance}
 
@@ -116,6 +131,20 @@
 
 \subsection{Central Limit Theorem}
 
+\subsection{Empirical Rule}
+
+\section{Markov's and Chebyshev's Inequalities}
+
+\section{Uncommon Probability Distributions}
+
+\subsection{Poisson Distribution}
+\subsection{Negative Hypergeometric Distribution}
+\subsection{Chi-Squared Distribution}
+
+\subsection{Exponential Distribution}
+
+\subsection{Dirac Delta Function}
+
 
 \chapter{Advanced Expectation}
 
@@ -125,8 +154,24 @@
 
 \begin{propc}[Roundtable Handshakes]
     100 people sit around a roundtable. Each person raises either their left hand, right hand, or both hands, each with $1/3$ probability. If two adjacent people raise their adjacent hands, they shake hands (e.g., a person who raises their right hand and a person to their right raises their left hand would shake hands). What is the expected number of handshakes? \\\\
-    SOLUTION: \\\\
+    SOLUTION\@: \\\\
     Let $H_i$ be the event that person $i$ shakes hands with person $i+1$ (with person 100 shaking hands with person 1). Then the total number of handshakes is \[H=\sum_{i=1}^{100}H_i\] By linearity of expectation, \[E(H)=\sum_{i=1}^{100}E(H_i)\] Now we analyze $H_i$. The probability person $i$ raises their right hand is $1/3 + 1/3 = 2/3$. The probability person $i+1$ raises their left hand is $1/3 + 1/3 = 2/3$. Thus, the probability that person $i$ and person $i+1$ shake hands is $P(H_i)=\frac{2}{3}\cdot\frac{2}{3}=\frac{4}{9}$. Therefore, \[E(H)=\sum_{i=1}^{100}\frac{4}{9}=\boxed{\frac{400}{9}}\]
+    
+\end{propc}
+
+\section{The Principle of Symmetry}
+
+\begin{propc}[First Ace]
+    Cards are drawn from the top of a shuffled regular 52-card deck. What is the expected number of cards needed to draw the first ace? \\\\
+    SOLUTION\@: \\\\
+    
+\end{propc}
+
+\begin{propc}[Third Highest Card]
+    From the set of the first 24 positive intgers, six are randomly and uniformly chosen without replacement. What is the expected value of the third highest card? \\\\
+    SOLUTION\@: \\\\
+    We can use a stars-and-bars method of thinking to solve this problem. 
+    
     
 \end{propc}
 
@@ -134,14 +179,14 @@
 
 \section{Markov Chains}
 
-\begin{propc}[Rabbit Jump 'Til Termination]
+\begin{propc}[Rabbit Jump `Til Termination]
     A rabbit starts at the origin on a number line. At each second, it jumps to the right with probability $1/3$ and to the left with probability $2/3$. The rabbit stops when it reaches $-2$, $2$, or after $8$ jumps, whichever comes first. What is the expected number of jumps? \\\\
     SOLUTION 1: \\\\
 Note that the jumps must terminate on an even second. With this in mind, we can calulate the probability it terminates at each even second. Denote $e_n$ as the probability it termaintes on the $n^{\text{th}}$ second. \\\\
-$e_2$: LL or RR, so $e_2=\left(\frac{1}{3}\right)^2+\left(\frac{2}{3}\right)^2=\frac{5}{9}$ \\
-$e_4$: LR or RL, then probability it terminates in two seconds, or $e_2$. Thus $e_4=2\left(\frac{1}{3}\right)\left(\frac{2}{3}\right)e_2=\frac{20}{81}$.\\
-$e_6$: We follow the same logic as above. $e_6=2\left(\frac{1}{3}\right)\left(\frac{2}{3}\right)e_4=\frac{80}{729}$\\
-$e_8$: We must include ending at 0 in addition to -2 and 2. \\ $e_8=2\left(\frac{1}{3}\right)\left(\frac{2}{3}\right)e_6+\left(2\left(\frac{1}{3}\right)\left(\frac{2}{3}\right)\right)^4=\frac{64}{729}$\\\\
+$e_2$: LL or RR, so $e_2={\left(\frac{1}{3}\right)}^2+{\left(\frac{2}{3}\right)}^2=\frac{5}{9}$ \\
+$e_4$: LR or RL, then probability it terminates in two seconds, or $e_2$. Thus $e_4=2{\left(\frac{1}{3}\right)}{\left(\frac{2}{3}\right)}e_2=\frac{20}{81}$.\\
+$e_6$: We follow the same logic as above. $e_6=2{\left(\frac{1}{3}\right)}{\left(\frac{2}{3}\right)}e_4=\frac{80}{729}$\\
+$e_8$: We must include ending at 0 in addition to -2 and 2. \\ $e_8=2{\left(\frac{1}{3}\right)}{\left(\frac{2}{3}\right)}e_6+{\left(2{\left(\frac{1}{3}\right)}{\left(\frac{2}{3}\right)}\right)}^4=\frac{64}{729}$\\\\
 Thus, \[E(X)=2\left(\frac{5}{9}\right)+4\left(\frac{20}{81}\right)+6\left(\frac{80}{729}\right)+8\left(\frac{64}{729}\right)=\boxed{\frac{2522}{729}}\]\\
 
 \noindent SOLUTION 2: \\\\
@@ -168,36 +213,61 @@ Thus,
 Karthik is on a vertex of a pentagon. Every minute, he randomly moves to an adjacent vertex. What is the expected number of minutes until he returns to his original vertex.\\\\
 SOLUTION 1 (Markov Chain): \\\\
 
-SOLUTION 2 (Utilising Random Walks): \\\\
+\noindent SOLUTION 2 (Utilising Random Walks): \\\\
 Again, due to symmetry, where we begin doesn't matter. However, the key insight is realizing that after the first step, we now have a random walk with bounds at $-1$ and $4$. The expected time for the run to terminate is $ab=(1)(4)=4$. Thus, the expected time is $1+4=5$.
 
 \end{propc}
 
 \subsection{Gambler's Ruin}
 
+\section{Advanced Geometric Thinking}
+
+\begin{propc}
+    Ten points are uniformly, indepedently, randomly chosen on the interval $[0,1]$. What is the expected minimum distance between any two points? 
+\end{propc}
+
+\begin{propc}
+    Three points are independently and randomly placed on the unit circle. What is the expected arc length of the arc containing the point $(1,0)$?
+\end{propc}
+
+\begin{propc}
+    Points are uniformly, independently, and randomly chosen on the interval $[0,1]$. What is the expected number of points needed to be generated so that the sum exceeds one?
+\end{propc}
+
 \section{Advanced Probabalistic Thinking}
 
 \begin{propc}[Painting the Circumcircle]
     A circle is drawn. A first point is randomly placed on the circle, and then a second. Draw a green line clockwise from the first point to the second point. A third point is randomly placed on the circle, then a fourth. Draw a red line counterclockwise from the third point to the fourth point. What is the probability that the two line segments intersect? \\\\
     
-    SOLUTION: \\\\
+    SOLUTION\@: \\\\
     
 \end{propc}
 
 \begin{propc}[Acute Inscribed Triangle]
 Three points are independently and randomly placed in a circle, and connected to form a triangle. What is the probability that the triangle is acute? \\\\
 
-
 \end{propc}
+
 
 \subsection{Reduced Spaces}
 
 \begin{propc}[2 Dice before 2 Dice]
 Roll a die until a 2 and a 3 are rolled at least once. What is the probability that exactly 2 6s appear? \\\\
-SOLUTION: \\\\
+SOLUTION\@: \\\\
 \end{propc}
 
 
+\section{Combinations with Expectation}
+
+\begin{propc}
+    Draw cards repeatedly from a standard 52-card deck without replacement. What is the expected number of cards needed to draw until you get an ace? \\\\
+    SOLUTION\@: \\\\
+    
+\end{propc}
+
+\begin{propc}
+    Consider a three-by-six grid. Place the numbers 1 through 18 into the grid, uniformly at random without replacement. What is the expected value of the smallest number in the second row?
+\end{propc}
 
 
 \section{Game Theory and Nim}
@@ -205,8 +275,18 @@ SOLUTION: \\\\
 
 \chapter{Advanced Counting Techniques}
 \section{Derangements}
+A derangement is a permutation of a set of elements where no object appears in its original position. Say, for example, that three people, A, B, C, put their coat on a coat rack. Later, those three people randomly take a coat when leaving. A possible derangement is that A grabs C's coat, B grab A's coat, and C grabs B's coat. \par \vspace{3pt}
+The number of derangements of a set of size $n$ is known as the $n^{th}$ derangement, commonly denoted as $!n$, $D(n)$, or $D_n$. There are several helpful formulas for derangements:
+\[D(n)=(n-1)\bigl(D(n-1)+D(n-2)\bigr)\]
+\[!n=n!\sum_{r=0}^{n}\frac{(-1)^r}{r!}\]
+\[!n=\lfloor \frac{n!+1}{e} \rfloor\]
+\[\lim_{n\rightarrow\infty} \frac{!n}{n!}=\frac{1}{e}\]
 
 \section{Vandermonde's Identity}
+
+\begin{propc}
+    Consider a 9-by-9 grid with a point on the bottom left corner and another point on the top right corner. Each second, the bottom left point can move either up or right one space, and the top right point can either move down or left one space. In how many possible ways can the points meet?
+\end{propc}
 
 \section{Burnside's Lemma}
 
